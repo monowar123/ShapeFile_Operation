@@ -52,18 +52,21 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DotSpatial.Controls">
-      <HintPath>C:\Users\HDSL115\Desktop\Shape file Task\DotSpatial 1.8\DotSpatial.Controls.dll</HintPath>
+    <Reference Include="DotSpatial.Controls, Version=1.8.0.0, Culture=neutral, PublicKeyToken=4d9e49339a7d240c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Library\DotSpatial 1.8\DotSpatial.Controls.dll</HintPath>
     </Reference>
-    <Reference Include="DotSpatial.Data">
-      <HintPath>C:\Users\HDSL115\Desktop\Shape file Task\DotSpatial 1.8\DotSpatial.Data.dll</HintPath>
+    <Reference Include="DotSpatial.Data, Version=1.8.0.0, Culture=neutral, PublicKeyToken=c29dbf30e059ca9d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Library\DotSpatial 1.8\DotSpatial.Data.dll</HintPath>
     </Reference>
     <Reference Include="DotSpatial.Projections, Version=1.8.0.0, Culture=neutral, PublicKeyToken=272632bddd08a38b, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\HDSL115\Desktop\Shape file Task\DotSpatial 1.8\DotSpatial.Projections.dll</HintPath>
+      <HintPath>D:\Library\DotSpatial 1.8\DotSpatial.Projections.dll</HintPath>
     </Reference>
-    <Reference Include="DotSpatial.Topology">
-      <HintPath>C:\Users\HDSL115\Desktop\Shape file Task\DotSpatial 1.8\DotSpatial.Topology.dll</HintPath>
+    <Reference Include="DotSpatial.Topology, Version=1.8.0.0, Culture=neutral, PublicKeyToken=a66b5e9434ca3671, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Library\DotSpatial 1.8\DotSpatial.Topology.dll</HintPath>
     </Reference>
     <Reference Include="gdal_csharp">
       <HintPath>C:\Users\HDSL115\Desktop\New folder\bin\gdal\csharp\gdal_csharp.dll</HintPath>
@@ -93,13 +96,13 @@
       <HintPath>..\packages\HashFoo.SqlServer.SpatialTypes.10.0.0.0\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Mono.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+    <Reference Include="Mono.Security, Version=4.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\HDSL115\Desktop\Library\NpgSql2.2.7\Mono.Security.dll</HintPath>
+      <HintPath>D:\Library\NpgSql2.2.7\Mono.Security.dll</HintPath>
     </Reference>
-    <Reference Include="Npgsql, Version=2.2.7.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+    <Reference Include="Npgsql, Version=2.0.1.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\x86\Debug\Npgsql.dll</HintPath>
+      <HintPath>D:\Library\NpgSql2.2.7\Npgsql.dll</HintPath>
     </Reference>
     <Reference Include="ogr_csharp, Version=1.0.5387.28600, Culture=neutral, PublicKeyToken=db5a52b08dc5b321, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

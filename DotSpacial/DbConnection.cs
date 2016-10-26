@@ -10,10 +10,10 @@ namespace DotSpacialTest
     public class DbConnection
     {
         string host = "localhost";
-        string port = "5433";
+        string port = "5432";
         string dbName = "PO02";
         string userId = "postgres";
-        string password = "1234";
+        string password = "postgres";
 
         string connString = string.Empty;
 

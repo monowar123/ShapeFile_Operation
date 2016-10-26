@@ -398,25 +398,27 @@ namespace DotSpacialTest
         {
             try
             {
-                string query = "select st_asbinary(the_geom) as geom from hitbgt where cadid='12345'";
+                string query = "select st_asbinary(the_geom) as geom from hitbgt where cadid='111etiLRxs'";
                 DbHandeler dbHandeler = new DbHandeler();
                 DataTable dt = dbHandeler.GetDataTable(query);
                 WkbReader reader = new WkbReader();
                 IGeometry geometry = reader.Read((byte[])dt.Rows[0]["geom"]);
 
                 //----------------------------------------------------
-                IFeatureSet fs = FeatureSet.Open("F:\\Test_value\\hitbgt_backup.shp");
+                IFeatureSet fs = FeatureSet.Open("D:\\Test_value\\hitbgt.shp");
                 fs.FillAttributes();
 
                 IFeature feature = fs.AddFeature(geometry);
+
                 feature.DataRow.BeginEdit();
-                feature.DataRow["cadid"] = "12345";
+                feature.DataRow["cadid"] = "123456";
                 feature.DataRow["blk"] = "New value";
+                feature.DataRow["area"] = "1";
                 feature.DataRow.EndEdit();
 
                 dataGridView1.DataSource = fs.DataTable;
 
-                fs.SaveAs("F:\\Test_value\\hitbgt_backup.shp", true);
+                fs.SaveAs("D:\\Test_value\\hitbgt.shp", true);
                 fs.Close();
                 MessageBox.Show("Row inserted successfully.");
             }
